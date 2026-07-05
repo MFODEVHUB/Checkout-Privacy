@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — Checkout / Privacy Policy — Checkout</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.7;
+    }
+    header {
+      background: #c6203a;
+      color: #fff;
+      padding: 2.5rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 { font-size: 1.8rem; font-weight: 700; }
+    header p  { margin-top: .4rem; opacity: .85; font-size: .95rem; }
+    .lang-switch {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      margin-top: 1.2rem;
+    }
+    .lang-switch button {
+      font: inherit;
+      font-weight: 600;
+      font-size: .85rem;
+      padding: .4rem 1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .6);
+      background: transparent;
+      color: #fff;
+      cursor: pointer;
+    }
+    .lang-switch button.active {
+      background: #fff;
+      color: #c6203a;
+    }
+    main {
+      max-width: 760px;
+      margin: 2.5rem auto;
+      padding: 0 1.25rem 4rem;
+    }
+    section { margin-bottom: 2.2rem; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #c6203a;
+      margin-bottom: .6rem;
+      padding-bottom: .3rem;
+      border-bottom: 2px solid #f6dbe0;
+    }
+    p  { margin-bottom: .8rem; }
+    ul { margin: .4rem 0 .8rem 1.4rem; }
+    li { margin-bottom: .3rem; }
+    a  { color: #c6203a; }
+    footer {
+      text-align: center;
+      font-size: .8rem;
+      color: #868e96;
+      padding: 1.5rem;
+      border-top: 1px solid #dee2e6;
+    }
+    .lang-hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 data-lang-content="fr">Politique de confidentialité</h1>
+  <h1 data-lang-content="en" class="lang-hidden">Privacy Policy</h1>
+  <p data-lang-content="fr">Application Checkout &mdash; dernière mise à jour : 6 juillet 2026</p>
+  <p data-lang-content="en" class="lang-hidden">Checkout app &mdash; last updated: July 6, 2026</p>
+  <div class="lang-switch">
+    <button type="button" data-set-lang="fr" class="active">Français</button>
+    <button type="button" data-set-lang="en">English</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================= FRANÇAIS ============================= -->
+  <div data-lang-content="fr">
+
+    <section>
+      <h2>1. Présentation</h2>
+      <p>
+        Checkout est une application Android de suivi de score pour les fléchettes, éditée par un
+        développeur indépendant (ci-après « nous » ou « l'éditeur »). La présente politique de
+        confidentialité décrit quelles données sont collectées, comment elles sont utilisées et
+        quels droits vous disposez à leur égard.
+      </p>
+      <p>Contact : <a href="mailto:mfodev@free.fr">mfodev@free.fr</a></p>
+    </section>
+
+    <section>
+      <h2>2. Données stockées localement sur votre appareil</h2>
+      <p>
+        Checkout enregistre vos données de jeu <strong>exclusivement sur votre appareil</strong>,
+        dans une base de données locale (Room/SQLite). Ces données ne sont jamais transmises à nos
+        serveurs ni à des tiers. Elles comprennent :
+      </p>
+      <ul>
+        <li>Les joueurs et bots que vous créez (nom, niveau de difficulté du bot)</li>
+        <li>L'historique de vos parties (X01, Cricket) et leurs statistiques</li>
+        <li>Le détail des manches, tours et fléchettes lancées</li>
+        <li>Votre préférence d'affichage (thème clair, sombre ou automatique)</li>
+      </ul>
+      <p>
+        Aucune de ces données ne quitte votre appareil. La fonction <strong>« Effacer toutes les
+        données »</strong> des Paramètres supprime définitivement l'ensemble de ces informations.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Commentaires envoyés via Supabase</h2>
+      <p>
+        Si vous utilisez la fonction <strong>« Envoyer un commentaire »</strong> depuis les
+        Paramètres, le texte de votre message est envoyé à notre base de données hébergée par
+        <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, un service tiers
+        d'hébergement de données. Cet envoi n'a lieu que si vous rédigez et validez explicitement
+        un commentaire — aucune donnée n'est envoyée automatiquement ou en arrière-plan.
+      </p>
+      <p>Sont transmis avec votre message, à des fins de diagnostic uniquement :</p>
+      <ul>
+        <li>Le texte du commentaire</li>
+        <li>La version de l'application</li>
+        <li>La version d'Android de votre appareil</li>
+        <li>Le modèle de votre appareil</li>
+        <li>La langue de votre appareil</li>
+        <li>Le thème actif (clair/sombre/auto)</li>
+      </ul>
+      <p>
+        Cet envoi est <strong>anonyme</strong> : aucun nom, e-mail, identifiant publicitaire ou
+        compte n'est associé à votre message. Nous ne pouvons pas vous identifier à partir de ces
+        informations, sauf si vous choisissez de les inclure vous-même dans le texte de votre
+        commentaire.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Données non collectées</h2>
+      <p>Checkout <strong>ne collecte pas</strong> :</p>
+      <ul>
+        <li>Votre nom, adresse e-mail ou toute information d'identification personnelle</li>
+        <li>Votre localisation GPS</li>
+        <li>Des photos ou fichiers médias</li>
+        <li>Des données de navigation web</li>
+        <li>Aucune donnée publicitaire — l'application n'affiche aucune publicité</li>
+      </ul>
+      <p>L'application ne dispose d'aucun compte utilisateur et ne nécessite aucune inscription.</p>
+    </section>
+
+    <section>
+      <h2>5. Autorisations Android utilisées</h2>
+      <ul>
+        <li><strong>INTERNET</strong> — nécessaire uniquement pour l'envoi d'un commentaire depuis
+            les Paramètres. Aucune fonctionnalité de jeu ne dépend du réseau.</li>
+      </ul>
+      <p>Aucune autre permission système n'est demandée.</p>
+    </section>
+
+    <section>
+      <h2>6. Sécurité des communications</h2>
+      <p>
+        La seule communication réseau de l'application (l'envoi d'un commentaire) s'effectue
+        exclusivement via <strong>HTTPS</strong> vers l'infrastructure Supabase.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Partage des données avec des tiers</h2>
+      <p>
+        Nous ne vendons, ne louons et ne partageons vos données avec aucun tiers, à l'exception du
+        contenu des commentaires que vous choisissez d'envoyer, hébergé par Supabase dans les
+        conditions décrites à la section 3. Consultez la
+        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">politique de
+        confidentialité de Supabase</a> pour plus de détails sur leur traitement des données
+        d'hébergement.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Vos droits (RGPD)</h2>
+      <p>
+        Si vous êtes résident de l'Espace économique européen, vous disposez de droits d'accès, de
+        rectification et d'effacement concernant les commentaires que vous nous avez envoyés. Ces
+        messages étant anonymes, nous ne pouvons les retrouver que si vous nous fournissez des
+        éléments permettant de les identifier (date d'envoi approximative, contenu du message).
+        Pour exercer ces droits, contactez-nous à
+        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Conservation des données</h2>
+      <p>
+        Les données locales (joueurs, parties, statistiques, préférences) sont conservées sur votre
+        appareil jusqu'à ce que vous les effaciez manuellement (via <strong>Paramètres → Effacer
+        toutes les données</strong>) ou que vous désinstalliez l'application. Les commentaires
+        envoyés sont conservés jusqu'à suppression manuelle par l'éditeur.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Enfants</h2>
+      <p>
+        Checkout n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas
+        sciemment de données personnelles concernant des mineurs.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Modifications de cette politique</h2>
+      <p>
+        Nous nous réservons le droit de mettre à jour cette politique de confidentialité. En cas de
+        modification substantielle, la date de « dernière mise à jour » en haut de cette page sera
+        actualisée. Nous vous encourageons à consulter cette page périodiquement.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>
+        Pour toute question relative à cette politique de confidentialité, vous pouvez nous
+        contacter à l'adresse suivante : <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>
+      </p>
+    </section>
+
+  </div>
+
+  <!-- ============================== ENGLISH ============================== -->
+  <div data-lang-content="en" class="lang-hidden">
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        Checkout is an Android darts scoring app published by an independent developer
+        (hereafter "we" or "the publisher"). This privacy policy describes what data is
+        collected, how it is used, and what rights you have over it.
+      </p>
+      <p>Contact: <a href="mailto:mfodev@free.fr">mfodev@free.fr</a></p>
+    </section>
+
+    <section>
+      <h2>2. Data stored locally on your device</h2>
+      <p>
+        Checkout saves your game data <strong>exclusively on your device</strong>, in a local
+        database (Room/SQLite). This data is never transmitted to our servers or to any third
+        party. It includes:
+      </p>
+      <ul>
+        <li>The players and bots you create (name, bot difficulty level)</li>
+        <li>Your game history (X01, Cricket) and statistics</li>
+        <li>Leg, turn, and dart-throw details</li>
+        <li>Your display preference (light, dark, or automatic theme)</li>
+      </ul>
+      <p>
+        None of this data ever leaves your device. The <strong>"Clear all data"</strong> option in
+        Settings permanently deletes all of this information.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Feedback sent via Supabase</h2>
+      <p>
+        If you use the <strong>"Send feedback"</strong> feature from Settings, the text of your
+        message is sent to our database hosted by
+        <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, a third-party
+        data hosting service. This only happens when you explicitly write and submit a comment —
+        no data is ever sent automatically or in the background.
+      </p>
+      <p>The following is sent along with your message, for diagnostic purposes only:</p>
+      <ul>
+        <li>The feedback text</li>
+        <li>The app version</li>
+        <li>Your device's Android version</li>
+        <li>Your device model</li>
+        <li>Your device's language</li>
+        <li>The active theme (light/dark/auto)</li>
+      </ul>
+      <p>
+        This submission is <strong>anonymous</strong>: no name, email, advertising identifier, or
+        account is associated with your message. We cannot identify you from this information
+        unless you choose to include it yourself in the text of your comment.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Data we do not collect</h2>
+      <p>Checkout <strong>does not collect</strong>:</p>
+      <ul>
+        <li>Your name, email address, or any personally identifying information</li>
+        <li>Your GPS location</li>
+        <li>Photos or media files</li>
+        <li>Web browsing data</li>
+        <li>Any advertising data — the app displays no ads whatsoever</li>
+      </ul>
+      <p>The app has no user account and requires no sign-up.</p>
+    </section>
+
+    <section>
+      <h2>5. Android permissions used</h2>
+      <ul>
+        <li><strong>INTERNET</strong> — only needed to send feedback from Settings. No gameplay
+            feature depends on network access.</li>
+      </ul>
+      <p>No other system permission is requested.</p>
+    </section>
+
+    <section>
+      <h2>6. Communication security</h2>
+      <p>
+        The app's only network communication (sending feedback) is carried out exclusively over
+        <strong>HTTPS</strong> to Supabase's infrastructure.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Sharing data with third parties</h2>
+      <p>
+        We do not sell, rent, or share your data with any third party, except for the content of
+        feedback you choose to send, hosted by Supabase under the conditions described in section
+        3. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's
+        privacy policy</a> for details on how they handle hosting data.
+      </p>
+    </section>
+
+    <section>
+      <h2>8. Your rights (GDPR)</h2>
+      <p>
+        If you are a resident of the European Economic Area, you have rights of access,
+        rectification, and erasure regarding feedback you have sent us. Since these messages are
+        anonymous, we can only locate them if you provide details that help identify them
+        (approximate submission date, message content). To exercise these rights, contact us at
+        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Data retention</h2>
+      <p>
+        Local data (players, games, statistics, preferences) is kept on your device until you
+        manually delete it (via <strong>Settings → Clear all data</strong>) or uninstall the app.
+        Submitted feedback is kept until manually deleted by the publisher.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Children</h2>
+      <p>
+        Checkout is not directed at children under 13. We do not knowingly collect personal data
+        from minors.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Changes to this policy</h2>
+      <p>
+        We reserve the right to update this privacy policy. In case of a substantial change, the
+        "last updated" date at the top of this page will be revised. We encourage you to review
+        this page periodically.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Contact</h2>
+      <p>
+        For any question regarding this privacy policy, you can reach us at:
+        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>
+      </p>
+    </section>
+
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Checkout &mdash; <span data-lang-content="fr">Tous droits réservés</span><span data-lang-content="en" class="lang-hidden">All rights reserved</span>
+</footer>
+
+<script>
+  var buttons = document.querySelectorAll('[data-set-lang]');
+  buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var lang = btn.getAttribute('data-set-lang');
+      document.documentElement.setAttribute('lang', lang);
+      document.querySelectorAll('[data-lang-content]').forEach(function (el) {
+        el.classList.toggle('lang-hidden', el.getAttribute('data-lang-content') !== lang);
+      });
+      buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+    });
+  });
+</script>
+
+</body>
+</html>
