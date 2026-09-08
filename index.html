@@ -79,7 +79,7 @@
 <div id="en">
   <header>
     <h1>Privacy Policy</h1>
-    <p>Checkout app &mdash; last updated: July 6, 2026</p>
+    <p>Checkout app &mdash; last updated: September 7, 2026</p>
     <div class="lang-switch">
       <a href="#fr">Français</a>
       <span class="current">English</span>
@@ -143,58 +143,112 @@
     </section>
 
     <section>
-      <h2>4. Data we do not collect</h2>
+      <h2>4. Advertising (Google AdMob)</h2>
+      <p>
+        The <strong>"Support"</strong> screen lets you optionally watch a <strong>rewarded video
+        ad</strong> (to unlock a color theme or as a way to support development) served by
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google
+        AdMob</a>. No ad is ever shown outside of this screen, and none is shown automatically:
+        you must explicitly tap "Watch an ad" to trigger one.
+      </p>
+      <p>
+        To serve and measure these ads, Google's Mobile Ads SDK may process an advertising
+        identifier and technical data about your device (device model, OS version, coarse
+        location derived from IP, ad interaction data). On first launch, a consent form (Google's
+        User Messaging Platform, "UMP") is shown where applicable under GDPR, letting you choose
+        whether to allow personalized advertising. See
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's
+        Privacy Policy</a> and
+        <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">how
+        Google uses information from sites or apps that use its services</a> for details.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Purchases (Google Play Billing)</h2>
+      <p>
+        The "Support" screen also offers optional one-time donations and a monthly subscription,
+        processed entirely by <strong>Google Play Billing</strong>. Checkout never sees or stores
+        your payment details (card number, billing address, etc.) — these are handled directly by
+        Google Play under its own
+        <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">privacy
+        notice</a>. The app only receives confirmation of whether a purchase or subscription is
+        active, which is used locally to unlock the corresponding features.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Data we do not collect</h2>
       <p>Checkout <strong>does not collect</strong>:</p>
       <ul>
         <li>Your name, email address, or any personally identifying information</li>
         <li>Your GPS location</li>
         <li>Photos or media files</li>
         <li>Web browsing data</li>
-        <li>Any advertising data — the app displays no ads whatsoever</li>
+        <li>Your payment details (handled entirely by Google Play, see section 5)</li>
       </ul>
       <p>The app has no user account and requires no sign-up.</p>
     </section>
 
     <section>
-      <h2>5. Android permissions used</h2>
+      <h2>7. Android permissions used</h2>
       <ul>
-        <li><strong>INTERNET</strong> — only needed to send feedback from Settings. No gameplay
-            feature depends on network access.</li>
+        <li><strong>INTERNET</strong> — needed to send feedback (section 3), serve ads (section 4),
+            and process purchases (section 5). No core gameplay feature depends on network
+            access.</li>
+        <li><strong>ACCESS_NETWORK_STATE</strong> — required by the Google Mobile Ads SDK to check
+            network availability before requesting an ad.</li>
       </ul>
       <p>No other system permission is requested.</p>
     </section>
 
     <section>
-      <h2>6. Communication security</h2>
+      <h2>8. Communication security</h2>
       <p>
-        The app's only network communication (sending feedback) is carried out exclusively over
-        <strong>HTTPS</strong> to Supabase's infrastructure.
+        All of the app's network communication (feedback, ads, purchases) is carried out
+        exclusively over <strong>HTTPS</strong>, to Supabase's infrastructure and to Google's.
       </p>
     </section>
 
     <section>
-      <h2>7. Sharing data with third parties</h2>
+      <h2>9. Sharing data with third parties</h2>
       <p>
-        We do not sell, rent, or share your data with any third party, except for the content of
-        feedback you choose to send, hosted by Supabase under the conditions described in section
-        3. See <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's
-        privacy policy</a> for details on how they handle hosting data.
+        We do not sell, rent, or share your data with any third party ourselves. Three third-party
+        services process data on our behalf, each under its own privacy policy:
       </p>
+      <ul>
+        <li>The content of feedback you choose to send, hosted by
+            <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (section 3) —
+            see <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's
+            privacy policy</a>.</li>
+        <li>Advertising data processed by <strong>Google AdMob</strong> when you choose to watch a
+            rewarded ad (section 4) — see
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's
+            privacy policy</a>.</li>
+        <li>Payment data processed by <strong>Google Play Billing</strong> when you make a purchase
+            (section 5) — see
+            <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">Google
+            Play's privacy notice</a>.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>8. Your rights (GDPR)</h2>
+      <h2>10. Your rights (GDPR)</h2>
       <p>
         If you are a resident of the European Economic Area, you have rights of access,
         rectification, and erasure regarding feedback you have sent us. Since these messages are
         anonymous, we can only locate them if you provide details that help identify them
         (approximate submission date, message content). To exercise these rights, contact us at
-        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>.
+        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>. Regarding advertising consent collected
+        via Google's consent form (section 4), and regarding purchases processed by Google Play
+        (section 5), please refer to
+        <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google's
+        own privacy controls</a>, since we do not control that data ourselves.
       </p>
     </section>
 
     <section>
-      <h2>9. Data retention</h2>
+      <h2>11. Data retention</h2>
       <p>
         Local data (players, games, statistics, preferences) is kept on your device until you
         manually delete it (via <strong>Settings → Clear all data</strong>) or uninstall the app.
@@ -203,7 +257,7 @@
     </section>
 
     <section>
-      <h2>10. Children</h2>
+      <h2>12. Children</h2>
       <p>
         Checkout is not directed at children under 13. We do not knowingly collect personal data
         from minors.
@@ -211,7 +265,7 @@
     </section>
 
     <section>
-      <h2>11. Changes to this policy</h2>
+      <h2>13. Changes to this policy</h2>
       <p>
         We reserve the right to update this privacy policy. In case of a substantial change, the
         "last updated" date at the top of this page will be revised. We encourage you to review
@@ -220,7 +274,7 @@
     </section>
 
     <section>
-      <h2>12. Contact</h2>
+      <h2>14. Contact</h2>
       <p>
         For any question regarding this privacy policy, you can reach us at:
         <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>
@@ -235,7 +289,7 @@
 <div id="fr">
   <header>
     <h1>Politique de confidentialité</h1>
-    <p>Application Checkout &mdash; dernière mise à jour : 6 juillet 2026</p>
+    <p>Application Checkout &mdash; dernière mise à jour : 7 septembre 2026</p>
     <div class="lang-switch">
       <span class="current">Français</span>
       <a href="#en">English</a>
@@ -301,61 +355,119 @@
     </section>
 
     <section>
-      <h2>4. Données non collectées</h2>
+      <h2>4. Publicité (Google AdMob)</h2>
+      <p>
+        L'écran <strong>« Me soutenir »</strong> vous permet de regarder, si vous le souhaitez, une
+        <strong>publicité vidéo récompensée</strong> (pour déverrouiller un thème de couleurs ou
+        simplement pour soutenir le développement), servie par
+        <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google
+        AdMob</a>. Aucune publicité n'apparaît en dehors de cet écran, et aucune ne se déclenche
+        automatiquement : vous devez explicitement appuyer sur « Regarder une pub » pour en
+        déclencher une.
+      </p>
+      <p>
+        Pour servir et mesurer ces publicités, le SDK Google Mobile Ads peut traiter un
+        identifiant publicitaire et des données techniques sur votre appareil (modèle, version
+        du système, localisation approximative déduite de l'IP, données d'interaction avec la
+        publicité). Au premier lancement, un formulaire de consentement (Google User Messaging
+        Platform, « UMP ») s'affiche là où le RGPD l'exige, vous permettant de choisir d'autoriser
+        ou non la publicité personnalisée. Consultez la
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de
+        confidentialité de Google</a> et la page
+        <a href="https://www.google.com/about/company/user-consent-policy/" target="_blank" rel="noopener">sur
+        l'utilisation des informations par Google</a> pour plus de détails.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Achats (Google Play Billing)</h2>
+      <p>
+        L'écran « Me soutenir » propose également des dons ponctuels et un abonnement mensuel,
+        traités intégralement par <strong>Google Play Billing</strong>. Checkout ne voit ni ne
+        stocke jamais vos moyens de paiement (numéro de carte, adresse de facturation, etc.) — ils
+        sont gérés directement par Google Play selon sa propre
+        <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">notice
+        de confidentialité</a>. L'application ne reçoit qu'une confirmation qu'un achat ou un
+        abonnement est actif, utilisée localement pour déverrouiller les fonctionnalités
+        correspondantes.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Données non collectées</h2>
       <p>Checkout <strong>ne collecte pas</strong> :</p>
       <ul>
         <li>Votre nom, adresse e-mail ou toute information d'identification personnelle</li>
         <li>Votre localisation GPS</li>
         <li>Des photos ou fichiers médias</li>
         <li>Des données de navigation web</li>
-        <li>Aucune donnée publicitaire — l'application n'affiche aucune publicité</li>
+        <li>Vos moyens de paiement (gérés entièrement par Google Play, voir section 5)</li>
       </ul>
       <p>L'application ne dispose d'aucun compte utilisateur et ne nécessite aucune inscription.</p>
     </section>
 
     <section>
-      <h2>5. Autorisations Android utilisées</h2>
+      <h2>7. Autorisations Android utilisées</h2>
       <ul>
-        <li><strong>INTERNET</strong> — nécessaire uniquement pour l'envoi d'un commentaire depuis
-            les Paramètres. Aucune fonctionnalité de jeu ne dépend du réseau.</li>
+        <li><strong>INTERNET</strong> — nécessaire pour l'envoi d'un commentaire (section 3),
+            l'affichage des publicités (section 4) et le traitement des achats (section 5).
+            Aucune fonctionnalité de jeu essentielle ne dépend du réseau.</li>
+        <li><strong>ACCESS_NETWORK_STATE</strong> — requise par le SDK Google Mobile Ads pour
+            vérifier la disponibilité du réseau avant de demander une publicité.</li>
       </ul>
       <p>Aucune autre permission système n'est demandée.</p>
     </section>
 
     <section>
-      <h2>6. Sécurité des communications</h2>
+      <h2>8. Sécurité des communications</h2>
       <p>
-        La seule communication réseau de l'application (l'envoi d'un commentaire) s'effectue
-        exclusivement via <strong>HTTPS</strong> vers l'infrastructure Supabase.
+        L'ensemble des communications réseau de l'application (commentaires, publicités, achats)
+        s'effectue exclusivement via <strong>HTTPS</strong>, vers l'infrastructure Supabase et
+        vers celle de Google.
       </p>
     </section>
 
     <section>
-      <h2>7. Partage des données avec des tiers</h2>
+      <h2>9. Partage des données avec des tiers</h2>
       <p>
-        Nous ne vendons, ne louons et ne partageons vos données avec aucun tiers, à l'exception du
-        contenu des commentaires que vous choisissez d'envoyer, hébergé par Supabase dans les
-        conditions décrites à la section 3. Consultez la
-        <a href="https://supabase.com/privacy" target="_blank" rel="noopener">politique de
-        confidentialité de Supabase</a> pour plus de détails sur leur traitement des données
-        d'hébergement.
+        Nous ne vendons, ne louons et ne partageons vos données avec aucun tiers de notre propre
+        initiative. Trois services tiers traitent cependant des données pour notre compte, chacun
+        selon sa propre politique de confidentialité :
       </p>
+      <ul>
+        <li>Le contenu des commentaires que vous choisissez d'envoyer, hébergé par
+            <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (section 3)
+            — voir la <a href="https://supabase.com/privacy" target="_blank" rel="noopener">politique
+            de confidentialité de Supabase</a>.</li>
+        <li>Les données publicitaires traitées par <strong>Google AdMob</strong> lorsque vous
+            choisissez de regarder une publicité récompensée (section 4) — voir la
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique
+            de confidentialité de Google</a>.</li>
+        <li>Les données de paiement traitées par <strong>Google Play Billing</strong> lors d'un
+            achat (section 5) — voir la
+            <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">notice
+            de confidentialité de Google Play</a>.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>8. Vos droits (RGPD)</h2>
+      <h2>10. Vos droits (RGPD)</h2>
       <p>
         Si vous êtes résident de l'Espace économique européen, vous disposez de droits d'accès, de
         rectification et d'effacement concernant les commentaires que vous nous avez envoyés. Ces
         messages étant anonymes, nous ne pouvons les retrouver que si vous nous fournissez des
         éléments permettant de les identifier (date d'envoi approximative, contenu du message).
         Pour exercer ces droits, contactez-nous à
-        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>.
+        <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>. Concernant le consentement publicitaire
+        recueilli via le formulaire Google (section 4), et concernant les achats traités par
+        Google Play (section 5), reportez-vous aux
+        <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">outils
+        de confidentialité de Google</a>, ces données n'étant pas sous notre contrôle.
       </p>
     </section>
 
     <section>
-      <h2>9. Conservation des données</h2>
+      <h2>11. Conservation des données</h2>
       <p>
         Les données locales (joueurs, parties, statistiques, préférences) sont conservées sur votre
         appareil jusqu'à ce que vous les effaciez manuellement (via <strong>Paramètres → Effacer
@@ -365,7 +477,7 @@
     </section>
 
     <section>
-      <h2>10. Enfants</h2>
+      <h2>12. Enfants</h2>
       <p>
         Checkout n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas
         sciemment de données personnelles concernant des mineurs.
@@ -373,7 +485,7 @@
     </section>
 
     <section>
-      <h2>11. Modifications de cette politique</h2>
+      <h2>13. Modifications de cette politique</h2>
       <p>
         Nous nous réservons le droit de mettre à jour cette politique de confidentialité. En cas de
         modification substantielle, la date de « dernière mise à jour » en haut de cette page sera
@@ -382,7 +494,7 @@
     </section>
 
     <section>
-      <h2>12. Contact</h2>
+      <h2>14. Contact</h2>
       <p>
         Pour toute question relative à cette politique de confidentialité, vous pouvez nous
         contacter à l'adresse suivante : <a href="mailto:mfodev@free.fr">mfodev@free.fr</a>
