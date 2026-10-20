@@ -79,7 +79,7 @@
 <div id="en">
   <header>
     <h1>Privacy Policy</h1>
-    <p>Checkout app &mdash; last updated: September 7, 2026</p>
+    <p>Checkout app &mdash; last updated: October 20, 2026</p>
     <div class="lang-switch">
       <a href="#fr">Français</a>
       <span class="current">English</span>
@@ -121,9 +121,10 @@
       <h2>3. Feedback sent via Supabase</h2>
       <p>
         If you use the <strong>"Send feedback"</strong> feature from Settings, the text of your
-        message is sent to our database hosted by
+        message is sent to a database hosted by
         <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, a third-party
-        data hosting service. This only happens when you explicitly write and submit a comment —
+        data hosting service. This single Supabase project is shared by the apps published under
+        the MFODEVHUB name; each message is tagged with the name of the app it comes from. This only happens when you explicitly write and submit a comment —
         no data is ever sent automatically or in the background.
       </p>
       <p>The following is sent along with your message, for diagnostic purposes only:</p>
@@ -143,13 +144,49 @@
     </section>
 
     <section>
-      <h2>4. Advertising (Google AdMob)</h2>
+      <h2>4. Crash reports (Firebase Crashlytics)</h2>
+      <p>
+        To find and fix bugs, Checkout uses <strong>Firebase Crashlytics</strong>, a crash-reporting
+        service provided by Google. If the app crashes, a technical report is sent to Google
+        servers. <strong>Firebase Analytics is not used</strong> and no usage statistics are
+        collected.
+      </p>
+      <ul>
+        <li><strong>Data sent:</strong> the crash report (error details and the state of the app at
+            the time of the crash), your device model, your Android version, the app version, and
+            a Firebase installation identifier (a random identifier generated for the app on your
+            device, not linked to your identity). The report contains none of the data you enter
+            in the app.</li>
+        <li><strong>Purpose:</strong> detecting and fixing bugs to improve the app's stability.</li>
+        <li><strong>Legal basis:</strong> our legitimate interest in keeping the app working
+            (GDPR, Article 6(1)(f)).</li>
+        <li><strong>Processor:</strong> Google (Firebase). See
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's
+            privacy and security information</a>.</li>
+        <li><strong>Retention:</strong> 90 days on Firebase's side.</li>
+        <li><strong>Opt-out:</strong> collection is enabled by default and can be turned off at any
+            time in <strong>Settings → "Send anonymous crash reports"</strong>. Reports not yet
+            sent at that point are deleted from your device. Collection is never active in
+            debug builds.</li>
+      </ul>
+      <p>
+        Questions: <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Advertising (Google AdMob)</h2>
       <p>
         The <strong>"Support"</strong> screen lets you optionally watch a <strong>rewarded video
         ad</strong> (to unlock a color theme or as a way to support development) served by
         <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google
-        AdMob</a>. No ad is ever shown outside of this screen, and none is shown automatically:
-        you must explicitly tap "Watch an ad" to trigger one.
+        AdMob</a>. This rewarded ad only starts when you explicitly tap "Watch an ad".
+      </p>
+      <p>
+        Checkout also shows an <strong>interstitial ad</strong> from time to time when you leave
+        the victory screen at the end of a game (never during a game). You can switch these ads off
+        for 24 hours by watching 3 rewarded ads, or permanently with the one-time "Remove ads"
+        purchase (section 6).
       </p>
       <p>
         To serve and measure these ads, Google's Mobile Ads SDK may process an advertising
@@ -165,36 +202,37 @@
     </section>
 
     <section>
-      <h2>5. Purchases (Google Play Billing)</h2>
+      <h2>6. Purchases (Google Play Billing)</h2>
       <p>
-        The "Support" screen also offers optional one-time donations and a monthly subscription,
-        processed entirely by <strong>Google Play Billing</strong>. Checkout never sees or stores
+        The "Support" screen also offers optional one-time donations, a monthly subscription, and a
+        one-time "Remove ads" purchase, processed entirely by <strong>Google Play Billing</strong>. Checkout never sees or stores
         your payment details (card number, billing address, etc.) — these are handled directly by
         Google Play under its own
         <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">privacy
         notice</a>. The app only receives confirmation of whether a purchase or subscription is
-        active, which is used locally to unlock the corresponding features.
+        active, which is used locally to unlock the corresponding features (for example, removing
+        ads).
       </p>
     </section>
 
     <section>
-      <h2>6. Data we do not collect</h2>
+      <h2>7. Data we do not collect</h2>
       <p>Checkout <strong>does not collect</strong>:</p>
       <ul>
         <li>Your name, email address, or any personally identifying information</li>
         <li>Your GPS location</li>
         <li>Photos or media files</li>
         <li>Web browsing data</li>
-        <li>Your payment details (handled entirely by Google Play, see section 5)</li>
+        <li>Your payment details (handled entirely by Google Play, see section 6)</li>
       </ul>
       <p>The app has no user account and requires no sign-up.</p>
     </section>
 
     <section>
-      <h2>7. Android permissions used</h2>
+      <h2>8. Android permissions used</h2>
       <ul>
-        <li><strong>INTERNET</strong> — needed to send feedback (section 3), serve ads (section 4),
-            and process purchases (section 5). No core gameplay feature depends on network
+        <li><strong>INTERNET</strong> — needed to send feedback (section 3), send crash reports
+            (section 4), serve ads (section 5), and process purchases (section 6). No core gameplay feature depends on network
             access.</li>
         <li><strong>ACCESS_NETWORK_STATE</strong> — required by the Google Mobile Ads SDK to check
             network availability before requesting an ad.</li>
@@ -203,17 +241,17 @@
     </section>
 
     <section>
-      <h2>8. Communication security</h2>
+      <h2>9. Communication security</h2>
       <p>
-        All of the app's network communication (feedback, ads, purchases) is carried out
-        exclusively over <strong>HTTPS</strong>, to Supabase's infrastructure and to Google's.
+        All of the app's network communication (feedback, crash reports, ads, purchases) is carried
+        out exclusively over <strong>HTTPS</strong>, to Supabase's infrastructure and to Google's.
       </p>
     </section>
 
     <section>
-      <h2>9. Sharing data with third parties</h2>
+      <h2>10. Sharing data with third parties</h2>
       <p>
-        We do not sell, rent, or share your data with any third party ourselves. Three third-party
+        We do not sell, rent, or share your data with any third party ourselves. Four third-party
         services process data on our behalf, each under its own privacy policy:
       </p>
       <ul>
@@ -221,43 +259,51 @@
             <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (section 3) —
             see <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's
             privacy policy</a>.</li>
-        <li>Advertising data processed by <strong>Google AdMob</strong> when you choose to watch a
-            rewarded ad (section 4) — see
+        <li>Crash reports processed by <strong>Google (Firebase Crashlytics)</strong> unless you
+            turn them off (section 4) — see
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase's
+            privacy information</a>.</li>
+        <li>Advertising data processed by <strong>Google AdMob</strong> when ads are displayed
+            (section 5) — see
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's
             privacy policy</a>.</li>
         <li>Payment data processed by <strong>Google Play Billing</strong> when you make a purchase
-            (section 5) — see
+            (section 6) — see
             <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">Google
             Play's privacy notice</a>.</li>
       </ul>
     </section>
 
     <section>
-      <h2>10. Your rights (GDPR)</h2>
+      <h2>11. Your rights (GDPR)</h2>
       <p>
         If you are a resident of the European Economic Area, you have rights of access,
         rectification, and erasure regarding feedback you have sent us. Since these messages are
         anonymous, we can only locate them if you provide details that help identify them
         (approximate submission date, message content). To exercise these rights, contact us at
-        <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. Regarding advertising consent collected
-        via Google's consent form (section 4), and regarding purchases processed by Google Play
-        (section 5), please refer to
+        <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. You can also stop crash-report
+        collection at any time in Settings (section 4); crash reports are not linked to your
+        identity and are automatically deleted after 90 days, but you may contact us to request
+        their deletion or access. Regarding advertising consent collected
+        via Google's consent form (section 5), and regarding purchases processed by Google Play
+        (section 6), please refer to
         <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google's
         own privacy controls</a>, since we do not control that data ourselves.
       </p>
     </section>
 
     <section>
-      <h2>11. Data retention</h2>
+      <h2>12. Data retention</h2>
       <p>
         Local data (players, games, statistics, preferences) is kept on your device until you
         manually delete it (via <strong>Settings → Clear all data</strong>) or uninstall the app.
-        Submitted feedback is kept until manually deleted by the publisher.
+        Submitted feedback is kept until manually deleted by the publisher. Crash reports are kept for
+        90 days on Firebase's side.
       </p>
     </section>
 
     <section>
-      <h2>12. Children</h2>
+      <h2>13. Children</h2>
       <p>
         Checkout is not directed at children under 13. We do not knowingly collect personal data
         from minors.
@@ -265,7 +311,7 @@
     </section>
 
     <section>
-      <h2>13. Changes to this policy</h2>
+      <h2>14. Changes to this policy</h2>
       <p>
         We reserve the right to update this privacy policy. In case of a substantial change, the
         "last updated" date at the top of this page will be revised. We encourage you to review
@@ -274,7 +320,7 @@
     </section>
 
     <section>
-      <h2>14. Contact</h2>
+      <h2>15. Contact</h2>
       <p>
         For any question regarding this privacy policy, you can reach us at:
         <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>
@@ -289,7 +335,7 @@
 <div id="fr">
   <header>
     <h1>Politique de confidentialité</h1>
-    <p>Application Checkout &mdash; dernière mise à jour : 7 septembre 2026</p>
+    <p>Application Checkout &mdash; dernière mise à jour : 20 octobre 2026</p>
     <div class="lang-switch">
       <span class="current">Français</span>
       <a href="#en">English</a>
@@ -332,9 +378,10 @@
       <h2>3. Commentaires envoyés via Supabase</h2>
       <p>
         Si vous utilisez la fonction <strong>« Envoyer un commentaire »</strong> depuis les
-        Paramètres, le texte de votre message est envoyé à notre base de données hébergée par
+        Paramètres, le texte de votre message est envoyé à une base de données hébergée par
         <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>, un service tiers
-        d'hébergement de données. Cet envoi n'a lieu que si vous rédigez et validez explicitement
+        d'hébergement de données. Ce projet Supabase unique est commun aux applications publiées
+        sous le nom MFODEVHUB ; chaque message est étiqueté avec le nom de l'application d'origine. Cet envoi n'a lieu que si vous rédigez et validez explicitement
         un commentaire — aucune donnée n'est envoyée automatiquement ou en arrière-plan.
       </p>
       <p>Sont transmis avec votre message, à des fins de diagnostic uniquement :</p>
@@ -355,15 +402,52 @@
     </section>
 
     <section>
-      <h2>4. Publicité (Google AdMob)</h2>
+      <h2>4. Rapports de plantage (Firebase Crashlytics)</h2>
+      <p>
+        Pour détecter et corriger les bugs, Checkout utilise <strong>Firebase Crashlytics</strong>,
+        un service de rapports de plantage fourni par Google. Si l'application plante, un rapport
+        technique est envoyé aux serveurs de Google. <strong>Firebase Analytics n'est pas
+        utilisé</strong> et aucune statistique d'usage n'est collectée.
+      </p>
+      <ul>
+        <li><strong>Données envoyées :</strong> le rapport de plantage (détail de l'erreur et état
+            de l'application au moment du plantage), le modèle de votre appareil, votre version
+            d'Android, la version de l'application et un identifiant d'installation Firebase
+            (identifiant aléatoire généré pour l'application sur votre appareil, sans lien avec votre
+            identité). Le rapport ne contient aucune donnée saisie dans l'application.</li>
+        <li><strong>Finalité :</strong> détecter et corriger les bugs pour améliorer la stabilité de
+            l'application.</li>
+        <li><strong>Base légale :</strong> notre intérêt légitime à maintenir l'application en bon
+            état de fonctionnement (RGPD, article 6, 1, f).</li>
+        <li><strong>Sous-traitant :</strong> Google (Firebase). Voir les
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">informations
+            de confidentialité et de sécurité de Firebase</a>.</li>
+        <li><strong>Conservation :</strong> 90 jours côté Firebase.</li>
+        <li><strong>Désactivation :</strong> la collecte est activée par défaut et peut être coupée à
+            tout moment dans <strong>Paramètres → « Envoyer les rapports de plantage anonymes »</strong>.
+            Les rapports pas encore envoyés à ce moment-là sont supprimés de votre appareil. La
+            collecte n'est jamais active dans les versions de débogage.</li>
+      </ul>
+      <p>
+        Une question : <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>5. Publicité (Google AdMob)</h2>
       <p>
         L'écran <strong>« Me soutenir »</strong> vous permet de regarder, si vous le souhaitez, une
         <strong>publicité vidéo récompensée</strong> (pour déverrouiller un thème de couleurs ou
         simplement pour soutenir le développement), servie par
         <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google
-        AdMob</a>. Aucune publicité n'apparaît en dehors de cet écran, et aucune ne se déclenche
-        automatiquement : vous devez explicitement appuyer sur « Regarder une pub » pour en
-        déclencher une.
+        AdMob</a>. Cette publicité récompensée ne se lance que si vous appuyez explicitement sur
+        « Regarder une pub ».
+      </p>
+      <p>
+        Checkout affiche aussi, de temps en temps, une <strong>publicité interstitielle</strong>
+        lorsque vous quittez l'écran de victoire à la fin d'une partie (jamais pendant une partie).
+        Vous pouvez couper ces publicités pendant 24 heures en regardant 3 publicités récompensées,
+        ou définitivement avec l'achat unique « Retirer les pubs » (section 6).
       </p>
       <p>
         Pour servir et mesurer ces publicités, le SDK Google Mobile Ads peut traiter un
@@ -380,37 +464,38 @@
     </section>
 
     <section>
-      <h2>5. Achats (Google Play Billing)</h2>
+      <h2>6. Achats (Google Play Billing)</h2>
       <p>
-        L'écran « Me soutenir » propose également des dons ponctuels et un abonnement mensuel,
-        traités intégralement par <strong>Google Play Billing</strong>. Checkout ne voit ni ne
+        L'écran « Me soutenir » propose également des dons ponctuels, un abonnement mensuel et un achat unique
+        « Retirer les pubs », traités intégralement par <strong>Google Play Billing</strong>. Checkout ne voit ni ne
         stocke jamais vos moyens de paiement (numéro de carte, adresse de facturation, etc.) — ils
         sont gérés directement par Google Play selon sa propre
         <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">notice
         de confidentialité</a>. L'application ne reçoit qu'une confirmation qu'un achat ou un
         abonnement est actif, utilisée localement pour déverrouiller les fonctionnalités
-        correspondantes.
+        correspondantes (par exemple, retirer les publicités).
       </p>
     </section>
 
     <section>
-      <h2>6. Données non collectées</h2>
+      <h2>7. Données non collectées</h2>
       <p>Checkout <strong>ne collecte pas</strong> :</p>
       <ul>
         <li>Votre nom, adresse e-mail ou toute information d'identification personnelle</li>
         <li>Votre localisation GPS</li>
         <li>Des photos ou fichiers médias</li>
         <li>Des données de navigation web</li>
-        <li>Vos moyens de paiement (gérés entièrement par Google Play, voir section 5)</li>
+        <li>Vos moyens de paiement (gérés entièrement par Google Play, voir section 6)</li>
       </ul>
       <p>L'application ne dispose d'aucun compte utilisateur et ne nécessite aucune inscription.</p>
     </section>
 
     <section>
-      <h2>7. Autorisations Android utilisées</h2>
+      <h2>8. Autorisations Android utilisées</h2>
       <ul>
         <li><strong>INTERNET</strong> — nécessaire pour l'envoi d'un commentaire (section 3),
-            l'affichage des publicités (section 4) et le traitement des achats (section 5).
+            l'envoi des rapports de plantage (section 4), l'affichage des publicités (section 5) et
+            le traitement des achats (section 6).
             Aucune fonctionnalité de jeu essentielle ne dépend du réseau.</li>
         <li><strong>ACCESS_NETWORK_STATE</strong> — requise par le SDK Google Mobile Ads pour
             vérifier la disponibilité du réseau avant de demander une publicité.</li>
@@ -419,19 +504,19 @@
     </section>
 
     <section>
-      <h2>8. Sécurité des communications</h2>
+      <h2>9. Sécurité des communications</h2>
       <p>
-        L'ensemble des communications réseau de l'application (commentaires, publicités, achats)
-        s'effectue exclusivement via <strong>HTTPS</strong>, vers l'infrastructure Supabase et
+        L'ensemble des communications réseau de l'application (commentaires, rapports de plantage,
+        publicités, achats) s'effectue exclusivement via <strong>HTTPS</strong>, vers l'infrastructure Supabase et
         vers celle de Google.
       </p>
     </section>
 
     <section>
-      <h2>9. Partage des données avec des tiers</h2>
+      <h2>10. Partage des données avec des tiers</h2>
       <p>
         Nous ne vendons, ne louons et ne partageons vos données avec aucun tiers de notre propre
-        initiative. Trois services tiers traitent cependant des données pour notre compte, chacun
+        initiative. Quatre services tiers traitent cependant des données pour notre compte, chacun
         selon sa propre politique de confidentialité :
       </p>
       <ul>
@@ -439,45 +524,53 @@
             <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (section 3)
             — voir la <a href="https://supabase.com/privacy" target="_blank" rel="noopener">politique
             de confidentialité de Supabase</a>.</li>
-        <li>Les données publicitaires traitées par <strong>Google AdMob</strong> lorsque vous
-            choisissez de regarder une publicité récompensée (section 4) — voir la
+        <li>Les rapports de plantage traités par <strong>Google (Firebase Crashlytics)</strong>, sauf
+            si vous les désactivez (section 4) — voir les
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">informations
+            de confidentialité de Firebase</a>.</li>
+        <li>Les données publicitaires traitées par <strong>Google AdMob</strong> lorsque des
+            publicités sont affichées (section 5) — voir la
             <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique
             de confidentialité de Google</a>.</li>
         <li>Les données de paiement traitées par <strong>Google Play Billing</strong> lors d'un
-            achat (section 5) — voir la
+            achat (section 6) — voir la
             <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank" rel="noopener">notice
             de confidentialité de Google Play</a>.</li>
       </ul>
     </section>
 
     <section>
-      <h2>10. Vos droits (RGPD)</h2>
+      <h2>11. Vos droits (RGPD)</h2>
       <p>
         Si vous êtes résident de l'Espace économique européen, vous disposez de droits d'accès, de
         rectification et d'effacement concernant les commentaires que vous nous avez envoyés. Ces
         messages étant anonymes, nous ne pouvons les retrouver que si vous nous fournissez des
         éléments permettant de les identifier (date d'envoi approximative, contenu du message).
         Pour exercer ces droits, contactez-nous à
-        <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. Concernant le consentement publicitaire
-        recueilli via le formulaire Google (section 4), et concernant les achats traités par
-        Google Play (section 5), reportez-vous aux
+        <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>. Vous pouvez aussi couper à tout
+        moment la collecte des rapports de plantage dans les Paramètres (section 4) ; ces rapports ne
+        sont pas liés à votre identité et sont supprimés automatiquement après 90 jours, mais vous
+        pouvez nous contacter pour en demander l'accès ou la suppression. Concernant le consentement publicitaire
+        recueilli via le formulaire Google (section 5), et concernant les achats traités par
+        Google Play (section 6), reportez-vous aux
         <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">outils
         de confidentialité de Google</a>, ces données n'étant pas sous notre contrôle.
       </p>
     </section>
 
     <section>
-      <h2>11. Conservation des données</h2>
+      <h2>12. Conservation des données</h2>
       <p>
         Les données locales (joueurs, parties, statistiques, préférences) sont conservées sur votre
         appareil jusqu'à ce que vous les effaciez manuellement (via <strong>Paramètres → Effacer
         toutes les données</strong>) ou que vous désinstalliez l'application. Les commentaires
-        envoyés sont conservés jusqu'à suppression manuelle par l'éditeur.
+        envoyés sont conservés jusqu'à suppression manuelle par l'éditeur. Les rapports de plantage sont conservés
+        90 jours côté Firebase.
       </p>
     </section>
 
     <section>
-      <h2>12. Enfants</h2>
+      <h2>13. Enfants</h2>
       <p>
         Checkout n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas
         sciemment de données personnelles concernant des mineurs.
@@ -485,7 +578,7 @@
     </section>
 
     <section>
-      <h2>13. Modifications de cette politique</h2>
+      <h2>14. Modifications de cette politique</h2>
       <p>
         Nous nous réservons le droit de mettre à jour cette politique de confidentialité. En cas de
         modification substantielle, la date de « dernière mise à jour » en haut de cette page sera
@@ -494,7 +587,7 @@
     </section>
 
     <section>
-      <h2>14. Contact</h2>
+      <h2>15. Contact</h2>
       <p>
         Pour toute question relative à cette politique de confidentialité, vous pouvez nous
         contacter à l'adresse suivante : <a href="mailto:mfodevhub@gmail.com">mfodevhub@gmail.com</a>
